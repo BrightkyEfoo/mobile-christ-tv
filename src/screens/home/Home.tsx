@@ -13,34 +13,25 @@ import { Dimensions } from "react-native";
 import Fa5Icon from "react-native-vector-icons/FontAwesome5";
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import { ParamListBase } from "@react-navigation/native";
+import { Colors } from "../../styles/Constants";
 const emissions = [
   {
-    text: "KID/JEUNES",
+    text: "CULTE",
     playlistUrl:
       "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
   },
   {
-    text: "DIVERTISSEMENT",
+    text: "PREDICATION",
     playlistUrl:
       "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
   },
   {
-    text: "SOCIETE",
+    text: "ENSEIGNEMENT",
     playlistUrl:
       "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
   },
   {
-    text: "KID/JEUNES",
-    playlistUrl:
-      "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
-  },
-  {
-    text: "SOCIETE",
-    playlistUrl:
-      "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
-  },
-  {
-    text: "DIVERTISSEMENT",
+    text: "MUSIQUE",
     playlistUrl:
       "https://www.youtube.com/playlist?list=PLIl2EzNYri0clPh69L4z-vqOkfR7AK-To",
   },
@@ -135,7 +126,7 @@ const Home = ({ navigation }: Props) => {
         <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} activeOpacity={0.9}>
           <View
             style={{
-              backgroundColor: "red",
+              backgroundColor: Colors.primaryBackground,
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
@@ -231,7 +222,7 @@ const Home = ({ navigation }: Props) => {
 const Section3Styles = StyleSheet.create({
   cards: {
     borderRadius: 8,
-    backgroundColor: "rgb(220,220,220)",
+    backgroundColor: Colors.secondary ,//"rgb(220,220,220)",
     marginRight: 10,
     marginTop: 8,
     padding: 6,
@@ -269,7 +260,7 @@ const Section1Styles = StyleSheet.create({
     paddingVertical: 12,
   },
   emissionCards: {
-    backgroundColor: "rgb(150,185,75)",
+    backgroundColor:  Colors.secondary, //"rgb(150,185,75)",
     borderRadius: 5,
     borderWidth: 0,
     padding: 6,

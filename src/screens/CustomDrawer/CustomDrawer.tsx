@@ -8,6 +8,7 @@ import {
 import { Image } from "react-native";
 import { TouchableHighlight } from "react-native-gesture-handler";
 import Fa5Icon from "react-native-vector-icons/FontAwesome5";
+import { Colors } from "../../styles/Constants";
 type Props = {
   state: DrawerNavigationState<ParamListBase>;
   navigation: DrawerNavigationHelpers;
@@ -39,7 +40,7 @@ const CustomDrawer = ({ state, descriptors, navigation }: Props) => {
       <View
         style={{
           flexGrow: 1,
-          backgroundColor: "green",
+          backgroundColor: Colors.primaryBackground,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -146,7 +147,7 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     borderBottomRightRadius: 50,
     borderTopRightRadius: 50,
-    backgroundColor: "red",
+    backgroundColor: Colors.primary,
     padding: 18,
   },
   navLinkSub: {
